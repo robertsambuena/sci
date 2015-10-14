@@ -1,0 +1,192 @@
+.header {
+    padding-top: 20px;
+    background: #d32f2f;
+}
+
+.header-left {
+    text-align: center;
+}
+
+.description {
+    float: right;
+}
+
+.sci-logo {
+    width: 300px;
+}
+
+.header-right .description {
+    text-align: left;
+}
+
+.header-right .header-right-inner {
+    margin-top: 85px;
+}
+
+.header-right div span h4 {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.header-right div span p {
+    color: #bdbdbd;
+}
+
+.channel-id-field {
+    margin-top: -15px;
+}
+
+.channel-id-field input {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.channel-id-field i {
+    color: #fff;
+    margin-top: 7px;
+}
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+}
+
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+}
+
+.download-links-content {
+    padding-top: 50px;
+}
+
+.download-links-content .container span .download-desc {
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: #757575;
+}
+
+.download-links-content .container .progress {
+    height: 10px;
+    border-radius: 5px;
+    background: #bdbdbd;
+}
+
+.download-links-content .container .progress .determinate {
+    background: #ffa726;
+}
+
+.download-links-content .container span .parts {
+    margin-top: -5px;
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #757575;
+}
+
+.indicators-content .container .row .indicators-left h4 {
+    text-transform: uppercase;
+    font-size: 1.80rem;
+}
+
+.indicators-content .container .row .indicators-left .indicators {
+    margin-top: 30px;
+}
+
+.indicators-content .container .row .indicators-left .indicators ul li {
+    color: #9e9e9e;
+}
+
+.indicators-content .container .row .indicators-left .indicators ul li .row{
+    margin-bottom: 0;
+}
+
+.indicators-content .container .row .indicators-left .indicators ul li .row .s9 span{
+    position: relative;
+    top: 5px;
+    font-size: .95rem;
+    font-weight: 400;
+}
+
+.indicators-content .container .row .indicators-right .item span {
+    font-size: 2rem;
+    color: #9e9e9e;
+    font-weight: 400;
+    position: relative;
+    top: 221px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.indicators-content .container .row .table h4 {
+    text-transform: uppercase;
+    font-size: 1.80rem;
+}
+
+.indicators-content .container .row .table table {
+    margin-top: 30px;
+}
+
+.indicators-content .container .row .table table thead th {
+    padding-left: 20px;
+}
+
+.indicators-content .container .row .table table thead th span {
+    font-size: .80rem;
+    color: #9e9e9e;
+}
+
+.indicators-content .container .row .table table tbody td {
+    padding-left: 20px;
+}
+
+.indicators-content .container .row .table table tbody td span {
+    font-size: .90rem;
+}
+
+.item {
+    text-align: center;
+}
+
+svg {
+   -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.circle_animation {
+  stroke-dasharray: 1000; /* this value is the pixel circumference of the circle */
+  stroke-dashoffset: 440;
+}
+
+.html .circle_animation {
+    -webkit-animation: html 1s ease-out forwards;
+    animation: html 1s ease-out forwards;
+}
+
+.css .circle_animation {
+    -webkit-animation: css 1s ease-out forwards;
+    animation: css 1s ease-out forwards;
+}
+
+@-webkit-keyframes html {
+  to {
+    stroke-dashoffset: 80; /* 50% would be 220 (half the initial value specified above) */
+  }
+}
+
+@keyframes html {
+  to {
+    stroke-dashoffset: 80;
+  }
+}
+
+@-webkit-keyframes css {
+  to {
+    stroke-dashoffset: 160;
+  }
+}
+
+@keyframes css {
+  to {
+    stroke-dashoffset: 160;
+  }
+}
