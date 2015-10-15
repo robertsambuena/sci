@@ -1,3 +1,21 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.page-footer {
+    background-color: #d32f2f !important;
+}
+
+#content {
+    margin-bottom: 100px;
+}
+
 .header {
     padding-top: 20px;
     background: #d32f2f;
@@ -83,6 +101,10 @@
     color: #757575;
 }
 
+.indicators-content {
+    min-height: 600px;
+}
+
 .indicators-content .container .row .indicators-left h4 {
     text-transform: uppercase;
     font-size: 1.80rem;
@@ -105,16 +127,6 @@
     top: 5px;
     font-size: .95rem;
     font-weight: 400;
-}
-
-.indicators-content .container .row .indicators-right .item span {
-    font-size: 2rem;
-    color: #9e9e9e;
-    font-weight: 400;
-    position: relative;
-    top: 221px;
-    text-transform: uppercase;
-    text-align: center;
 }
 
 .indicators-content .container .row .table h4 {
@@ -143,50 +155,12 @@
     font-size: .90rem;
 }
 
-.item {
-    text-align: center;
+.collection-item {
+    height: 51px;
 }
 
-svg {
-   -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-}
-
-.circle_animation {
-  stroke-dasharray: 1000; /* this value is the pixel circumference of the circle */
-  stroke-dashoffset: 440;
-}
-
-.html .circle_animation {
-    -webkit-animation: html 1s ease-out forwards;
-    animation: html 1s ease-out forwards;
-}
-
-.css .circle_animation {
-    -webkit-animation: css 1s ease-out forwards;
-    animation: css 1s ease-out forwards;
-}
-
-@-webkit-keyframes html {
-  to {
-    stroke-dashoffset: 80; /* 50% would be 220 (half the initial value specified above) */
-  }
-}
-
-@keyframes html {
-  to {
-    stroke-dashoffset: 80;
-  }
-}
-
-@-webkit-keyframes css {
-  to {
-    stroke-dashoffset: 160;
-  }
-}
-
-@keyframes css {
-  to {
-    stroke-dashoffset: 160;
-  }
+.total-spam-circle {
+    margin: 50px auto;
+    height: 320px;
+    width: 320px;
 }

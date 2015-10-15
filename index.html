@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="materialize/css/materialize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 </head>
 <body>
     <div class="outer">
@@ -24,27 +23,88 @@
                                 <p>Input Channel ID</p>
                             </span>
                             <div class="channel-id-field input-field s6">
-                                <i class="material-icons prefix">search</i>
-                                <input type="text" class="validate">
+                                <form id="search_channel" method="GET" action="">
+                                    <i class="material-icons prefix">search</i>
+                                    <input type="text" value="UC05Sqv212obzy9veQ5mYKZg" class="validate">
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="download-links-content">
+        <div class="indicators-content">
             <div class="container">
-                <span class="flow-text">
-                    <p class="download-desc center-align">Checking download links in video description</p>
-                </span>
-                <div class="progress">
-                    <div class="determinate" style="width: 70%"></div>
+                <div id="filler" class="valign-wrapper">
+                    <h5 class="valign">Welcome to Freedom! Please input YouTube channel ID above.</h5>
                 </div>
-                <span class="flow-text">
-                    <p class="parts center-align">(7/10)</p>
-                </span>
+                <div id="loader" class="progress hide">
+                    <div class="indeterminate"></div>
+                </div>
+                <div id="content" class="row hide">
+                    <div class="indicators-left col l6 m12 s12">
+                        <h4>Indicators</h4>
+                        <div class="indicators z-depth-1">                
+                            <ul id="indicators_list" class="collection"></ul>
+                        </div>
+                    </div>
+                    <div class="indicators-right col l6 m12 s12">
+                        <div class="total-spam-circle">
+                            <input id="total_spam_per" type="text" class="dial" data-min="0" data-max="100" value="0">
+                        </div>
+                    </div>
+                    <div class="table col l12 m12 s12">
+                        <h4>Details</h4>
+                        <table id="cms_changes_list" class="responsive-table bordered z-depth-1">
+                            <thead>
+                                <tr>
+                                    <th data-field="id"><span>Date</span></th>
+                                    <th data-field="name"><span>Channel</span></th>
+                                    <th data-field="id"><span>Log</span></th>
+                                    <th data-field="name"><span>Note</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td colspan="4" class="center-align">Empty</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </body>
+
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">
+            <img src="https://www.freedom.tm/images/frdm-nav-logo.png" />
+        </h5>
+        <p class="grey-text text-lighten-4">For YouTubers, by Youtubers.</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Devs</h5>
+        <ul>
+          <li><a target="_blank" class="grey-text text-lighten-3" href="//github.com/ravenjohn">Raven John Lagrimas</a></li>
+          <li><a target="_blank" class="grey-text text-lighten-3" href="//github.com/ronaldpabilonia">Ronald Pabilonia</a></li>
+          <li><a target="_blank" class="grey-text text-lighten-3" href="//github.com/robertsambuena">Robert Sambuena</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2015 Copyright Text
+    <a target="_blank" class="grey-text text-lighten-4 right" href="//www.youtube.com/user/mcnfreedom">More Links</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+<script type="text/javascript" src="jquery.knob/jquery.knob.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
 </html>
